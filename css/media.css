@@ -1,0 +1,142 @@
+
+
+
+@media (max-width: 1500px) {
+    /* welcome section */
+    /* decor */
+    .welcome__decor--1 {
+        width: 150px;
+        translate: -53vw -35vh;
+    }
+
+    .welcome__decor--2 {
+        width: 150px;
+        translate: 40vw -38vh;
+    }
+
+}
+
+@media (max-width: 900px) {
+    /* header */
+    .header__tel {
+        font-size: 16px;
+    }
+
+    /* welcome section */
+    .welcome {
+        min-height: 100vh;
+    }
+
+    .welcome__header {
+        gap: 15px;
+    }
+    
+    .welcome__wrapper {
+        max-width: 50vw;
+        padding-top: max(25vh, 130px);
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .welcome__text {
+        font-size: 18px;
+    }
+
+    .welcome__wrapper {
+        row-gap: 30px;
+    }
+
+    .welcome__info {
+        display: none;
+    }
+
+    .subtitle {
+        font-size: 7px;
+        padding: 7px 10px;
+    }
+
+     /* decor */
+    .welcome__decor--1 {
+        width: 130px;
+        translate: -5vw -35vh;
+    }
+
+    .welcome__decor--3 {
+        width: 150px;
+        translate: 30vw 20vh;
+    }
+
+    .welcome__decor--4 {
+        width: 175px;
+        translate: -55vw 25vh;
+    }
+
+    /* btn */
+    .btn {
+        padding: 25px 30px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /* welcome section */
+    .welcome__decor--1, .welcome__decor--2 {
+        display: none;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .welcome__text, .btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 674px) {
+    /* header */
+    .header__address {
+        display: none;
+    }
+
+}
+
+@media (max-width: 520px) {
+    .header__info {
+        display: none;
+    }
+
+    /* welcome section */
+
+    .welcome::before {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
+    .welcome__wrapper {
+        max-width: 70vw;
+        margin-inline: auto;
+        padding-top: max(20vh, 130px);
+        align-items: center;
+    }
+
+    .welcome__header {
+        align-items: center;
+        text-align: center;
+    }
+
+    .welcome__subtitle {
+        align-self: flex-start;
+    }
+
+    .btn {
+        width: 70vw;
+    }
+
+    
+}

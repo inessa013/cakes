@@ -6,20 +6,21 @@
     <title>Cakes</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
    <header class="header">
         <div class="header__container container">
            <a href="" class="header__logo">Сладкий сундук</a>
-           <div class="header_info">
+           <div class="header__info">
                 <address class="header__address">
-                    <img src="img/icons/location.svg" alt="location icon" class="header__loc-icon">
+                    <img src="img/icons/location.svg" alt="Иконка местоположения" class="header__loc-icon">
                     <p class="header__address-info">г. Санкт Петербург, <br>ул. Куйбышева 31</p>
                 </address>
                 <div class="header__contact-info">
-                    <img src="img/icons/tel.svg" alt="tel icon" class="header__tel-icon">
+                    <img src="img/icons/tel.svg" alt="Иконка телефона" class="header__tel-icon">
                     <div class="header__block-info">
-                        <a href="tel:+88128449549" class="header__tel">8 (812) 844-95-49</a>
+                        <a href="tel:+88128449549" class="header__tel" title="Позвонить?">8 (812) 844-95-49</a>
                         <p class="header__start-work">Ежедневно с 9:00 до 20:00</p>
                     </div>
                 </div>
@@ -27,9 +28,33 @@
         </div>
    </header>
    <main class="main">
-        <section class="welcom">
+        <section class="welcome">
             <div class="container">
-
+                <img src="./img/decor/berry.png" class="welcome__decor welcome__decor--1" >
+                <img src="./img/decor/berry.png" class="welcome__decor welcome__decor--2">
+                <img src="./img/decor/berry.png" class="welcome__decor welcome__decor--3">
+                <img src="./img/decor/leaf.png" class="welcome__decor welcome__decor--4">
+                <div class="welcome__wrapper">
+                    <div class="welcome__header">
+                        <div class="welcome__subtitle subtitle">
+                            вкуснейшие
+                        </div>
+                        <h1 class="welcome__title title">
+                            Пирожные и капкейки от 150 ₽/шт. с доставкой по Санкт Петербургу
+                        </h1>
+                        <p class="welcome__text">
+                            Приготовим за 3 часа в день заказа. <br> Доставка на авто в холодильнике.
+                        </p>
+                    </div>
+                    <div class="welcome__btn-info">
+                        <a href="#catalog" class="welcome__btn btn">
+                            Перейти в каталог
+                        </a>
+                        <span class="welcome__info">
+                            9 различных <br> видов на выбор
+                        </span>
+                    </div> 
+                </div>
             </div>
         </section>
         <section class="catalog">
