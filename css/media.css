@@ -193,6 +193,10 @@
         width: 70vw;
     }
 
+    .catalog__btn {
+        align-self: center;
+    }
+
 }
 
 @media (max-width: 520px) and  (min-height: 700px) {
