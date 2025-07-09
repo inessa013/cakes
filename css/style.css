@@ -41,6 +41,8 @@ font-family: "Montserrat", sans-serif;
 
     --radius-btn: 8px;
     --radius-card: 5px;
+
+    --color-text: #2E363E;
 }
 
 body {
@@ -107,10 +109,6 @@ body {
 .header__contact-info {
     display: flex;
     gap: 15px;
-}
-
-.header__block-info {
-
 }
 
 .header__tel-icon {
@@ -239,7 +237,8 @@ body {
 }
 
 .btn {
-    color: #2E363E;
+    display: block;
+    color: var(--color-text);
     background-color: var(--color-btn);
     border-radius: var(--radius-btn);
     padding: 30px 50px;
@@ -251,5 +250,94 @@ body {
 .btn:hover {
     background-color: #fff;
     color: var(--color-main);
-    box-shadow: 0 0 5px 0 var(--color-main);
+    box-shadow: 0 0 3px 0 var(--color-btn);
+    cursor: pointer;
+}
+
+
+/*************************
+    catalog section
+*************************/
+
+.catalog {
+    background-color: var(--color-secondary);
+    margin-top: -2px;
+    position: relative;
+    z-index: 1;
+    color: var(--color-text);
+}
+
+.catalog__header {
+   margin-bottom: 80px;
+   text-align: center;
+}
+
+.catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.catalog__card {
+    min-height: 582px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.catalog__image {
+    max-width: 380px;
+    height: 245px;
+    overflow: hidden;
+    position: relative;
+    border-radius: var(--radius-btn);
+}
+
+.catalog__image img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   
+}
+
+.catalog__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    padding: 50px 44px;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.catalog__desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.catalog__title {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.catalog__text {
+   
+}
+
+.catalog__cost-btn {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    align-items: flex-start;
+}
+
+.catalog__cost {
+    color: #434B53;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.catalog__btn {
+
 }
